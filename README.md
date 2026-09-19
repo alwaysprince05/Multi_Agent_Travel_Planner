@@ -57,9 +57,45 @@ streamlit run multi_agent_system_streamlit.py
 - **Tabbed Results**: View Trip Overview, Itinerary, Budget, and Research in separate clean views.
 - **Downloadable Plans**: Export your final travel plan to a text file with one click.
 
+## 🧪 Testing
+
+Run the offline test suite (no API key needed — verifies imports, the LangGraph workflow, and error handling):
+
+```bash
+python test_system.py
+```
+
+Run the full end-to-end test (makes 4 real Groq API calls, requires `GROQ_API_KEY` in `.env`):
+
+```bash
+python test_system.py --live
+```
+
+## ☁️ Deployment (Streamlit Community Cloud — Free)
+
+1. Push this repository to your GitHub account.
+2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
+3. Click **Create app** → select your repo and branch.
+4. Main file path: `multi_agent_system_streamlit.py`
+5. Open **Advanced settings → Secrets** and add:
+
+   ```toml
+   GROQ_API_KEY = "your_gsk_key_here"
+   ```
+
+6. Click **Deploy**. Streamlit auto-installs `requirements.txt` and the app reads the key from `st.secrets` automatically.
+
+> The app looks for `GROQ_API_KEY` in the environment first (local `.env`) and falls back to Streamlit Secrets (cloud), so the same file works in both places. Never commit your real `.env` file — it is already excluded via `.gitignore`.
+
 ## 👤 Author
 
 **Prince Maurya**
+
+## 🔗 Submission Links
+
+- **GitHub Repository:** https://github.com/alwaysprince05/Multi_Agent_Travel_Planner
+- **Live Demo (Streamlit Cloud):** [Add your deployed app URL here]
+- **Demo Video (Google Drive):** [Add your video link here]
 
 ## 🙏 Acknowledgments
 
