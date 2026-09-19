@@ -101,7 +101,6 @@ python test_system.py --live
 
 - **GitHub Repository:** https://github.com/alwaysprince05/Multi_Agent_Travel_Planner
 - **Live Demo (Streamlit Cloud):** https://multiagenttravelplannergit-5fj4hxehklqqcgbaeepour.streamlit.app/
-- **Demo Video (Google Drive):** [Add your video link here]
 
 ## 🙏 Acknowledgments
 
