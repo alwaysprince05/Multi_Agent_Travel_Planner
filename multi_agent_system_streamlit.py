@@ -71,13 +71,13 @@ def get_api_key():
     return api_key
 
 # Shared LLM instance
-# Using Groq's free tier with llama-3.3-70b-versatile model
+# Using Groq's free tier with openai/gpt-oss-120b model
 api_key = get_api_key()
 llm = None
 
 if api_key:
     try:
-        llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.7, api_key=api_key)
+        llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0.7, api_key=api_key)
     except Exception as e:
         print(f"Error initializing ChatGroq: {e}")
 else:
@@ -439,7 +439,7 @@ def run_streamlit_app():
         st.markdown("**Technology Stack:**")
         st.markdown("- LangGraph for workflow")
         st.markdown("- LangChain for LLM integration")
-        st.markdown("- Groq API (llama-3.3-70b)")
+        st.markdown("- Groq API (openai/gpt-oss-120b)")
         st.markdown("- Streamlit for UI")
     
     # Main content

@@ -19,7 +19,7 @@ The system uses a directed graph workflow where each agent has a specific role:
 
 - **Workflow**: [LangGraph](https://github.com/langchain-ai/langgraph)
 - **AI Framework**: [LangChain](https://github.com/langchain-ai/langchain)
-- **LLM Engine**: [Groq Cloud](https://console.groq.com) (Llama-3.3-70b)
+- **LLM Engine**: [Groq Cloud](https://console.groq.com) (GPT-OSS-120B)
 - **Interface**: [Streamlit](https://streamlit.io/)
 - **Environment**: Python 3.9+
 

@@ -165,7 +165,11 @@ def test_live_run() -> bool:
         ]
         all_ok = True
         for name, value in checks:
-            status = "OK" if value and len(str(value)) > 20 else "FAIL"
+            if name == "destination":
+                # A valid destination is short by nature (e.g. "Tokyo")
+                status = "OK" if value and value.lower() != "unknown" else "FAIL"
+            else:
+                status = "OK" if value and len(str(value)) > 20 else "FAIL"
             if status == "FAIL":
                 all_ok = False
             print(f"      {status} - {name}: {str(value)[:60]!r}...")
