@@ -2,6 +2,12 @@
 
 A sophisticated multi-agent AI system that creates comprehensive, personalized travel plans through the collaboration of 4 specialized agents. Built with **LangGraph** for workflow orchestration and **LangChain** for LLM integration.
 
+## 🌐 Live Demo
+
+**🚀 [View Live App](https://multiagenttravelplannergit-5fj4hxehklqqcgbaeepour.streamlit.app/)** — deployed on Streamlit Community Cloud.
+
+Enter a travel request like *"I want to visit Tokyo for 5 days with a budget of $2000. I love food and temples."* and watch the 4 agents collaborate in real time.
+
 ## 📋 Overview
 
 This system transforms a simple travel request (e.g., *"I want to visit Tokyo for 5 days with a budget of $2000"*) into a detailed day-by-day itinerary, destination research, and budget analysis. 
@@ -94,7 +100,7 @@ python test_system.py --live
 ## 🔗 Submission Links
 
 - **GitHub Repository:** https://github.com/alwaysprince05/Multi_Agent_Travel_Planner
-- **Live Demo (Streamlit Cloud):** [Add your deployed app URL here]
+- **Live Demo (Streamlit Cloud):** https://multiagenttravelplannergit-5fj4hxehklqqcgbaeepour.streamlit.app/
 - **Demo Video (Google Drive):** [Add your video link here]
 
 ## 🙏 Acknowledgments
